@@ -1,0 +1,12 @@
+
+public class Conta {
+	private Pessoa titular;
+	
+	public void setTitular(Pessoa pTitular) {
+		titular = pTitular;
+	}
+	
+	public Pessoa getTitular() {
+		return titular;
+	}
+}

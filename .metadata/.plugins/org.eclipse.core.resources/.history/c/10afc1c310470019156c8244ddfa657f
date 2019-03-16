@@ -1,0 +1,68 @@
+
+public class Perfil {
+	private String facebook;
+	private String instagram;
+	private String twitter;
+	private String apelido;
+	private int idade;
+	private byte[] avatar;
+	
+	public void atribuirFacebook(String pFacebook) {
+		facebook = pFacebook;
+	}
+	
+	public String exibirFacebook() {
+		return facebook;
+	}
+	
+	public void atribuirInstagram(String pInstagram) {
+		instagram = pInstagram;
+	}
+	
+	public String exibirInstagram() {
+		return instagram;
+	}
+	
+	public void atribuirTwitter(String pTwitter) {
+		twitter = pTwitter;
+	}
+	
+	public String exibirTwitter() {
+		return twitter;
+	}
+	
+	public void atribuirApelido(String pApelido) {
+		apelido = pApelido;
+	}
+	
+	public String exibirApelido() {
+		return  apelido;
+	}
+	
+	public void atribuirIdade(int pIdade) {
+		idade = pIdade;
+	}
+	
+	public int exibirIdade() {
+		return idade;
+	}
+	
+	public void atribuirAvatar(byte[] pAvatar) {
+		avatar = pAvatar;
+	}
+	
+	public byte[] exibirAvatar() {
+		return avatar;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+

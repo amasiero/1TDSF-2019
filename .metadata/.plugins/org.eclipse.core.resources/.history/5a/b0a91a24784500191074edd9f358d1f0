@@ -1,0 +1,8 @@
+
+public class Conta {
+	private Perfil perfil;
+	private String plano;
+	private String pagamento;
+	private String login;
+	private String senha;
+}

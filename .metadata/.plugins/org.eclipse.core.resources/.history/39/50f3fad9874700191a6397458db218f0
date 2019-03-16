@@ -1,0 +1,8 @@
+
+public class Banco {
+	private int numero;
+	private String nome;
+	private Conta conta;
+	
+	
+}

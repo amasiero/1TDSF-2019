@@ -1,0 +1,8 @@
+
+public class Conta {
+	private Pessoa titular;
+	
+	public void atribuirTitular(Pessoa pTitular) {
+		titular = pTitular;
+	}
+}

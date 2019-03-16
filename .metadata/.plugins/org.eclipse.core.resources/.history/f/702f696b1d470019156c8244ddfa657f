@@ -1,0 +1,30 @@
+
+public class Pessoa {
+	private String nome;
+	private int cpf;
+	private int idade;
+	
+	public void atribuirNome(String pNome) {
+		nome = pNome;
+	}
+	
+	public String exibirNome() {
+		return nome;
+	}
+	
+	public void atribuirCpf(int pCpf) {
+		cpf = pCpf;
+	}
+	
+	public int exibirCpf() {
+		return cpf;
+	}
+	
+	public void atribuirIdade(int pIdade) {
+		idade = pIdade;
+	}
+	
+	public int exibirIdade() {
+		return idade;
+	}
+}

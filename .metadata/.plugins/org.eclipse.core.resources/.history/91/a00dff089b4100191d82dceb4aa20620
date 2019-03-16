@@ -1,0 +1,10 @@
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Perfil p = new Perfil();
+		p.facebook = "andreymasiero";
+
+	}
+
+}

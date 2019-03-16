@@ -1,0 +1,10 @@
+
+public class Pessoa {
+	private String nome;
+	private int cpf;
+	private int idade;
+	
+	public void atribuirNome(String pNome) {
+		nome = pNome;
+	}
+}

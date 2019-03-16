@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Perfil p = new Perfil();
+		Scanner s = new Scanner(System.in);
+		String facebook = s.nextLine();
+		System.out.println(facebook);
+	}
+
+}

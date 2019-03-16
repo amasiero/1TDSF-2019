@@ -1,0 +1,28 @@
+
+public class TesteBanco {
+
+	public static void main(String[] args) {
+		Pessoa p = new Pessoa();
+		p.atribuirCpf(123);
+		p.atribuirIdade(10);
+		p.atribuirNome("Goku");
+		System.out.println(
+				"Nome: " + p.exibirNome() +
+				"\nCPF: " + p.exibirCpf() +
+				"\nIdade: " + p.exibirIdade()
+ 				);
+		
+		Conta c = new Conta();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

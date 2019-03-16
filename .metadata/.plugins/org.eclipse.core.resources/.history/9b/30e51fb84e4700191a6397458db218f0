@@ -1,0 +1,18 @@
+
+public class Conta {
+	private String tipo;
+	private Pessoa titular;
+	
+	public Conta(String pTipo, Pessoa pTitular) {
+		tipo = pTipo;
+		titular = pTitular;
+	}
+	
+	public void setTitular(Pessoa pTitular) {
+		titular = pTitular;
+	}
+	
+	public Pessoa getTitular() {
+		return titular;
+	}
+}

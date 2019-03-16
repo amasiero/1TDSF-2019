@@ -1,0 +1,9 @@
+
+public class Perfil {
+	private String facebook;
+	String instagram;
+	String twitter;
+	String apelido;
+	int idade;
+	byte[] avatar;
+}
