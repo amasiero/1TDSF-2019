@@ -2,15 +2,8 @@
 public class TesteEscolinha {
 
 	public static void main(String[] args) {
-		Aluno parangaricutirimiruaru = new Aluno();
-		parangaricutirimiruaru.cpf = 1231243721;
-		// Um jeito
-		Endereco endereco = new Endereco();
-		endereco.rua ="xpto";
-		parangaricutirimiruaru.endereco = endereco;
+		Aluno parangaricutirimiruaru = new Aluno("Leia", 01, 1);
+		Endereco endereco = new Endereco("rua", 93481022, 142, "bairro", "cidade", "estado");
 		
-		// Outro jeito
-		parangaricutirimiruaru.endereco = new Endereco();
-		parangaricutirimiruaru.endereco.rua = "Jose Paulino";
 	}
 }
