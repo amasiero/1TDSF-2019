@@ -10,13 +10,12 @@ public class Viagem {
 	}
 	
 	public Viagem(String destino, int dias) {
-		this.destino = destino;
+		this(destino);
 		this.dias = dias;
 	}
 	
 	public Viagem(String destino, int dias, double preco) {
-		this.destino = destino;
-		this.dias = dias;
+		this(destino, dias);
 		this.preco = preco;
 	}
 	
