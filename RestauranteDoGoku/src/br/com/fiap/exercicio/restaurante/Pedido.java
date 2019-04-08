@@ -1,22 +1,22 @@
 package br.com.fiap.exercicio.restaurante;
 
 public class Pedido {
-	private String pedido;
+	private String descricao;
 	private double valor;
 	private boolean pendente;
 	
-	public Pedido(String pedido, double valor) {
-		this.pedido = pedido;
+	public Pedido(String descricao, double valor) {
+		this.descricao = descricao;
 		this.valor = valor;
 		this.pendente = true;
 	}
 	
-	public String getPedido() {
-		return pedido;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setPedido(String pedido) {
-		this.pedido = pedido;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public double getValor() {
@@ -27,11 +27,22 @@ public class Pedido {
 		this.valor = valor;
 	}
 
-	public boolean isPedidoPendente() {
+	public boolean isPendente() {
 		return pendente;
 	}
 
-	public void setPedidoPendente(boolean pendente) {
+	public void setPendente(boolean pendente) {
 		this.pendente = pendente;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
