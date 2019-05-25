@@ -6,6 +6,15 @@
 <fullyQualifiedTypeName name="com.andreymasiero.fiap.valet.bean.Veiculo"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="com.andreymasiero.fiap.valet.bo.Valet"/>
+<fullyQualifiedTypeName name="com.andreymasiero.fiap.heranca.JatoDeTinta"/>
+<fullyQualifiedTypeName name="com.andreymasiero.fiap.heranca.Matricial"/>
+<fullyQualifiedTypeName name="com.andreymasiero.fiap.heranca.Impressora"/>
+<fullyQualifiedTypeName name="com.andreymasiero.fiap.heranca.Laser"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.andreymasiero.excecao.FiapException"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
 </qualifiedTypeNameHistroy>

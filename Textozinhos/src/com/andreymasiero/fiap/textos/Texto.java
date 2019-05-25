@@ -15,6 +15,12 @@ public class Texto {
 		System.out.println("Bom dia, " + primeiroNome);
 		scan.close();
 		
+//		if (nomeCompleto.trim().length() > 0) {
+//			String[] nomes = nomeCompleto.trim().split(" ");
+//			return nomes[0].toUpperCase();
+//		} else {
+//			return "Não é um nome válido";
+//		}
 //		String texto = "O rato roeu a roupa do rei de roma";
 //		int pPosicao = texto.toUpperCase().indexOf("R");
 //		int uPosicao = texto.toUpperCase().lastIndexOf("R");
