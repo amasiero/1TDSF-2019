@@ -32,6 +32,7 @@ public class Principal {
 		Scanner s = new Scanner(System.in);
 		int x = s.nextInt();
 		int y = s.nextInt();
+		s.close();
 		if (x < y) throw new FiapException("X não pode ser maior que Y.");
 		System.out.println("Finalizando método main...");
 	}

@@ -17,4 +17,19 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.andreymasiero.excecao.FiapException"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.service.security.IamOptions"/>
+<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.service.security.IamOptions.Builder"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v1.model.MessageInput"/>
+<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.http.HttpConfigOptions"/>
+<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.http.HttpConfigOptions.Builder"/>
+<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.security.AuthenticatorConfig"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.CreateSessionOptions"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.CreateSessionOptions.Builder"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.SessionResponse"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.DialogRuntimeResponseGeneric"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.DeleteSessionOptions"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.Assistant"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.MessageInput"/>
+<fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.MessageInput.Builder"/>
 </qualifiedTypeNameHistroy>
