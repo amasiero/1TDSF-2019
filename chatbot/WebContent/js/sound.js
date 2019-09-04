@@ -78,22 +78,34 @@ function generateBlob(blob) {
 
   li.appendChild(au);
   document.querySelector("#recordingsList").appendChild(li);
-  console.log(blob);
+  
+  var reader = new FileReader();
+  reader.readAsDataURL(blob);
+  reader.onloadend = function() {
+	  var base64data = reader.result;
+	  sendData(base64data);
+  }
+ 
+}
 
+function sendData(data) {
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "https://andrey-fiap-challenge.mybluemix.net/voice", true);
-  xhr.setRequestHeader("Content-type", "multipart/form-data");
+  xhr.open("POST", "speech", true);
+//  xhr.setRequestHeader("Content-type", "multipart/form-data");
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.addEventListener("load", function() {
 		if (xhr.status == 200) {
-			var respostas = JSON.parse(xhr.responseText);
-			respostas.forEach(function (resposta) {
-				createMessage(resposta.text, "bot", true);
-			});
+			console.log(xhr.responseText);
+//			var respostas = JSON.parse(xhr.responseText);
+//			respostas.forEach(function (resposta) {
+//				createMessage(resposta.text, "bot", true);
+//			});
 		} else {
 			console.log(xhr.status);
 			console.log(xhr.responseText);
 		}
 	});
 
-  xhr.send(blob);
+  parameter = "audio=" + data;
+  xhr.send(parameter);
 }

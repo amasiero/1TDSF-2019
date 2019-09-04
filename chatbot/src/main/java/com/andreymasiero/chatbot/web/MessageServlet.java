@@ -16,6 +16,7 @@ import com.ibm.watson.assistant.v2.model.CreateSessionOptions;
 import com.ibm.watson.assistant.v2.model.DialogRuntimeResponseGeneric;
 import com.ibm.watson.assistant.v2.model.MessageContext;
 import com.ibm.watson.assistant.v2.model.MessageInput;
+import com.ibm.watson.assistant.v2.model.MessageInputOptions;
 import com.ibm.watson.assistant.v2.model.MessageOptions;
 import com.ibm.watson.assistant.v2.model.MessageResponse;
 import com.ibm.watson.assistant.v2.model.SessionResponse;
@@ -54,7 +55,7 @@ public class MessageServlet extends HttpServlet{
 		IamOptions options =  new IamOptions.Builder()
 				.apiKey("MZeBQlhJ50VeMOUqPddbLAVtZ7h-jQ9rNX7We67FGcN0")
 				.build();
-		Assistant service = new Assistant("2019-06-22", options);
+		Assistant service = new Assistant("2019-02-28", options);
 		String assistantId = "48abc31e-13ba-4856-b97f-76a5c4854569";
 		
 		// Criando a sessão
@@ -62,9 +63,14 @@ public class MessageServlet extends HttpServlet{
 		SessionResponse session = service.createSession(sessionOptions).execute().getResult();
 		String sessionId = session.getSessionId();
 		
+		// Definido o retorno do contexto da conversa
+		MessageInputOptions inputOptions = new MessageInputOptions();
+		inputOptions.setReturnContext(true);
+		
 		// Iniciando a conversa
 		MessageInput input = new MessageInput.Builder()
 				.text(text)
+				.options(inputOptions)
 				.build();
 		
 		MessageOptions optionsMessage = new MessageOptions.Builder()
