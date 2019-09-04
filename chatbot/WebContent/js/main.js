@@ -38,7 +38,7 @@ function callBot(message) {
 		if (xhr.status == 200) {
 			var respostas = JSON.parse(xhr.responseText);
 			respostas.forEach(function (resposta) { 
-				createMessage(resposta, "bot", true);
+				createMessage(resposta.text, "bot", true);
 			});
 		} else {
 			console.log(xhr.status);
