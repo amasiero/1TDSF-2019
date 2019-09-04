@@ -31,7 +31,7 @@ public class MessageServlet extends HttpServlet{
 		
 		String message = req.getParameter("question");
 		
-		if (message.isEmpty())  this.context = null;
+		if (message.isEmpty())  this.context = new MessageContext();
 		
 		MessageResponse response = this.conversationAPI(message, context);
 		
@@ -42,7 +42,7 @@ public class MessageServlet extends HttpServlet{
 			chat.addBotMessage(text.getText());
 		}
 		
-		context = response.getContext();
+		if(response.getContext() != null) context = response.getContext();
 		
 		resp.setContentType("application/json");
 		resp.getWriter().write(new Gson().toJson(response.getOutput().getGeneric()));
@@ -77,6 +77,8 @@ public class MessageServlet extends HttpServlet{
 		MessageResponse response = service.message(optionsMessage)
 				.execute()
 				.getResult();
+		
+		System.out.println(response);
 		
 		return response;
 	} 

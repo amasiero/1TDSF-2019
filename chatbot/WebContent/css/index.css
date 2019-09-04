@@ -4,6 +4,21 @@ body {
 	background:#262626;
 }
 
+audio {
+  display: block;
+  width: 100%;
+  margin-top: 0.2rem;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+ol {
+	padding: 0;
+}
+
 .center {
 	position: absolute;
 	top: 50%;
@@ -91,21 +106,39 @@ h2 {
 
 button {
 	display: block;
-	background: #86817C;
+	background: #3395d6;
 	font-size: 16px;
 	color: #fff;
 	padding: 10px 20px;
 	border: 0;
-	border-bottom: 2px #54504C solid;
+	border-bottom: 2px #2772a4 solid;
 	border-radius: 3px;
-	position: relative;
-	left: 40%;
 	text-shadow: 0.05em 0.05em black;
+	width: 100px;
+	margin-right: 15px;
 }
 
 button:hover {
 	background: #54504C;
+	border-bottom: 2px #363636 solid;
 	cursor: pointer;
+}
+
+button:disabled {
+	background: lightgray;
+	border-bottom: 2px #54504C solid;
+	pointer-events: none;
+	text-shadow: none;
+}
+
+#controls {
+	width: 440px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#controls > button:last-child {
+	margin-right: 0px;
 }
 
 .pulse {
