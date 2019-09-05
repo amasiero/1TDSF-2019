@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div class="center">
-		<h2>Chabot Example w/ Watson and JSP</h2>
+		<h2>Chabot Example w/ Watson and Java</h2>
 		<div id="textchat" class="pulse"></div>
 		<input type="text" id="question" name="question" class="field"
 			placeholder="Type your question" />

@@ -26,7 +26,7 @@ public class SpeechToTextServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String audio = req.getParameter("audio");
 		System.out.println(audio);
-		byte[] byteArray = Base64.getDecoder().decode(audio);
+		byte[] byteArray = Base64.getMimeDecoder().decode(audio.split(",")[1]);
 		File tempFile = File.createTempFile("speech-", ".wav", null);
 		FileOutputStream fos = new FileOutputStream(tempFile);
 		fos.write(byteArray);
