@@ -25,6 +25,6 @@
 	</div>
 	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
 	<script type="text/javascript" src="js/sound.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- <script type="text/javascript" src="js/main.js"></script> -->
 </body>
 </html>

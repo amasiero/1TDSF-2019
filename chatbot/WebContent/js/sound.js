@@ -1,13 +1,13 @@
 //webkitURL é legado então sempre é bom manter a opção.
 URL = window.URL || window.webkitURL;
-// stream from getUserMedia()
+// stream gerado a partir do getUserMedia()
 var gumStream;
-// Recorder.js object
+// Objeto da biblioteca Recorder.js
 var rec;
 // MediaStreamAudioSourceNode we'll be recording
 // shim for AudioContext when it's not avb.
 var input;
-// new audio context to help us record
+// Pegando um novo AudioContext do navegador para auxiliar na gravacao
 var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext;
 // Selecionando os botões
@@ -78,21 +78,13 @@ function generateBlob(blob) {
 
   li.appendChild(au);
   document.querySelector("#recordingsList").appendChild(li);
-  
-  var reader = new FileReader();
-  reader.readAsDataURL(blob);
-  reader.onloadend = function() {
-	  var base64data = reader.result;
-	  sendData(base64data);
-  }
- 
+  sendData(blob); 
 }
 
 function sendData(data) {
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "speech", true);
-//  xhr.setRequestHeader("Content-type", "multipart/form-data");
-  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.setRequestHeader("Content-type", "audio/wav");
   xhr.addEventListener("load", function() {
 		if (xhr.status == 200) {
 			console.log(xhr.responseText);
@@ -106,6 +98,5 @@ function sendData(data) {
 		}
 	});
 
-  parameter = "audio=" + data;
-  xhr.send(parameter);
+  xhr.send(data);
 }
