@@ -16,6 +16,7 @@
 			placeholder="Type your question" />
 		<div id="controls">
 			<button id="sendQuestion">Send</button>
+			<button id="getVoiceButton">Get Voice</button>
 			<button id="recordButton">Record</button>
 			<button id="pauseButton" disabled>Pause</button>
 			<button id="stopButton" disabled>Stop</button>
@@ -25,6 +26,7 @@
 	</div>
 	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
 	<script type="text/javascript" src="js/sound.js"></script>
-	<!-- <script type="text/javascript" src="js/main.js"></script> -->
+	<script type="text/javascript" src="js/voice.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
