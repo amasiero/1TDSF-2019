@@ -11,6 +11,7 @@
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1551436837056"/>
     <tags>topLevel</tags>
+    <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_STX7Ys89EemmoJddV2Ff2Q" selectedElement="_STX7Y889EemmoJddV2Ff2Q" horizontal="true">
       <children xsi:type="advanced:PerspectiveStack" xmi:id="_STX7Y889EemmoJddV2Ff2Q" elementId="org.eclipse.ui.ide.perspectivestack" containerData="7500" selectedElement="_STX7ZM89EemmoJddV2Ff2Q">
         <children xsi:type="advanced:Perspective" xmi:id="_STX7ZM89EemmoJddV2Ff2Q" elementId="org.eclipse.jst.j2ee.J2EEPerspective" selectedElement="_STX7Zc89EemmoJddV2Ff2Q" label="Java EE" iconURI="platform:/plugin/org.eclipse.jst.j2ee.ui/icons/full/cview16/j2ee_perspective.gif">
@@ -516,7 +517,7 @@
           </menus>
         </children>
         <children xsi:type="basic:Part" xmi:id="_2IUyYM9yEemrk9MW3ecUAA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="SpeechToTextServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SpeechToTextServlet.java&quot; partName=&quot;SpeechToTextServlet.java&quot; title=&quot;SpeechToTextServlet.java&quot; tooltip=&quot;chatbot/src/main/java/com/andreymasiero/chatbot/web/SpeechToTextServlet.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/chatbot/src/main/java/com/andreymasiero/chatbot/web/SpeechToTextServlet.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1407&quot; selectionTopPixel=&quot;87&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;SpeechToTextServlet.java&quot; partName=&quot;SpeechToTextServlet.java&quot; title=&quot;SpeechToTextServlet.java&quot; tooltip=&quot;chatbot/src/main/java/com/andreymasiero/chatbot/web/SpeechToTextServlet.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/chatbot/src/main/java/com/andreymasiero/chatbot/web/SpeechToTextServlet.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1588&quot; selectionTopPixel=&quot;87&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -970,7 +971,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_STX-Gc89EemmoJddV2Ff2Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xgoXMNLjEemPxcOXZIIzSA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_STZz2s89EemmoJddV2Ff2Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6VABQNQfEemybokEGVhkCg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_STZz2s89EemmoJddV2Ff2Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_STX-J889EemmoJddV2Ff2Q" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1014,7 +1015,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_STX-o889EemmoJddV2Ff2Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_xgsooNLjEemPxcOXZIIzSA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_STZzeM89EemmoJddV2Ff2Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_6VE5wNQfEemybokEGVhkCg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_STZzeM89EemmoJddV2Ff2Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_STX-rs89EemmoJddV2Ff2Q" elementId="org.eclipse.wst.css.core.csssource.source" visible="false">
         <tags>Draggable</tags>
@@ -1548,7 +1549,7 @@
     <bindings xmi:id="_Ge8fss9sEemrk9MW3ecUAA" keySequence="ALT+COMMAND+CTRL+D Q" command="_STZyNM89EemmoJddV2Ff2Q">
       <tags>platform:cocoa</tags>
     </bindings>
-    <bindings xmi:id="_wUG5sdLjEemPxcOXZIIzSA" keySequence="COMMAND+CTRL+F" command="_STZ0tc89EemmoJddV2Ff2Q"/>
+    <bindings xmi:id="_5dDsoNQfEemybokEGVhkCg" keySequence="COMMAND+CTRL+F" command="_STZ0tc89EemmoJddV2Ff2Q"/>
   </bindingTables>
   <bindingTables xmi:id="_STYjn889EemmoJddV2Ff2Q" elementId="org.eclipse.debug.ui.debugging" bindingContext="_STYk3c89EemmoJddV2Ff2Q">
     <bindings xmi:id="_STYjoM89EemmoJddV2Ff2Q" keySequence="F5" command="_STZwss89EemmoJddV2Ff2Q"/>
@@ -1883,7 +1884,7 @@
     <bindings xmi:id="_STYkcM89EemmoJddV2Ff2Q" keySequence="CTRL+SHIFT+D" command="_STZyRc89EemmoJddV2Ff2Q"/>
   </bindingTables>
   <bindingTables xmi:id="_STYkcc89EemmoJddV2Ff2Q" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_STYk5s89EemmoJddV2Ff2Q">
-    <bindings xmi:id="_wUIH0NLjEemPxcOXZIIzSA" keySequence="M1+W" command="_STZ0t889EemmoJddV2Ff2Q"/>
+    <bindings xmi:id="_5dETsNQfEemybokEGVhkCg" keySequence="M1+W" command="_STZ0t889EemmoJddV2Ff2Q"/>
   </bindingTables>
   <bindingTables xmi:id="_STYkcs89EemmoJddV2Ff2Q" bindingContext="_STYk7889EemmoJddV2Ff2Q"/>
   <bindingTables xmi:id="_STYkc889EemmoJddV2Ff2Q" bindingContext="_STYk8M89EemmoJddV2Ff2Q"/>
