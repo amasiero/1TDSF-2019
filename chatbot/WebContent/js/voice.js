@@ -32,11 +32,14 @@ function sendMessageToVoice(message) {
 function createAudioElement(blob) {
 	var url = URL.createObjectURL(blob);
 	var au = document.createElement("audio");
-	var li = document.createElement("li");
+	var div = document.createElement("div");
 	
 	au.controls = true;
 	au.src = url;
 	
-	li.appendChild(au);
-	document.querySelector("#recordingsList").appendChild(li);
+	div.appendChild(au);
+	var chat = document.querySelector("#textchat");
+	chat.appendChild(div);
+	scrollDivDown(chat);
+	makePulse(chat);
 }

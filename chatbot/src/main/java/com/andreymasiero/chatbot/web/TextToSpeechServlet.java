@@ -1,7 +1,5 @@
 package com.andreymasiero.chatbot.web;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -40,37 +38,11 @@ public class TextToSpeechServlet extends HttpServlet {
 				.voice("pt-BR_IsabelaV3Voice")
 				.build();
 		
-//		final ByteArrayOutputStream baos = new ByteArrayOutputStream();
-//		tts.synthesizeUsingWebSocket(sOptions, new BaseSynthesizeCallback() {
-//			@Override
-//			public void onAudioStream(byte[] bytes) {
-//				try {
-//					baos.write(bytes);
-//				} catch (IOException e) {
-//					e.printStackTrace();
-//				}
-//			}
-//		});
-//		
-//		try {
-//			Thread.sleep(5000);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		File tempFile = File.createTempFile("speech-", ".wav", null);
-//		FileOutputStream fos = new FileOutputStream(tempFile);
-//		baos.writeTo(fos);
-//		
-//		baos.close();
-//		fos.close();
 				
 		InputStream is = tts.synthesize(sOptions).execute().getResult();
 		InputStream in = WaveUtils.reWriteWaveHeader(is);
 		
 		byte[] buffer = new byte[1024 * 1024];
-//		File tempFile = File.createTempFile("speech-", ".wav", null);
-		
 		try (OutputStream os = resp.getOutputStream()) {
 			int length;
 			while((length = in.read(buffer)) != -1) {

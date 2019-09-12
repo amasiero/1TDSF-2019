@@ -43,20 +43,35 @@ ol {
 	outline: none;
 }
 
+#textchat {
+	width: 470px !important; 
+}
+
+#question {
+	width: 98%;
+}
+
+audio { 
+	margin: 15px auto;
+	width: 80%;
+}
+
 .chat {
 	border-radius: 5px;
 	box-shadow: 0 0 6px #B2B2B2;
-	display: inline-block;
+	display: block;
 	padding: 10px 18px;
 	position: relative;
 	vertical-align: top;
 }
 
 .bot {
+	display: block;
 	background: #3395d6;
 	color: white;
 	float: left;
-	margin: 5px 20px 5px 45px;
+	clear: both;
+	margin: 5px 20px 15px 45px;
 }
 
 .bot:after {
@@ -75,10 +90,12 @@ ol {
 }
 
 .me {
+	display:block;
+	clear: both;
 	background: #EEE7E0;
 	color: black;
 	float: right;
-	margin: 5px 45px 5px 20px;
+	margin: 5px 45px 15px 20px;
 }
 
 .me:after {

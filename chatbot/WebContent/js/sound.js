@@ -69,16 +69,19 @@ function stopRecording() {
 }
 
 function generateBlob(blob) {
-  var url = URL.createObjectURL(blob);
-  var au = document.createElement("audio");
-  var li = document.createElement("li");
+	var url = URL.createObjectURL(blob);
+	var au = document.createElement("audio");
+	var div = document.createElement("div");
+	
+	au.controls = true;
+	au.src = url;
 
-  au.controls = true;
-  au.src = url;
-
-  li.appendChild(au);
-  document.querySelector("#recordingsList").appendChild(li);
-  sendData(blob); 
+	div.appendChild(au);
+	var chat = document.querySelector("#textchat");
+	chat.appendChild(div);
+	scrollDivDown(chat);
+	makePulse(chat);
+	sendData(blob); 
 }
 
 function sendData(data) {
@@ -87,11 +90,11 @@ function sendData(data) {
   xhr.setRequestHeader("Content-type", "audio/wav");
   xhr.addEventListener("load", function() {
 		if (xhr.status == 200) {
-			console.log(xhr.responseText);
-//			var respostas = JSON.parse(xhr.responseText);
-//			respostas.forEach(function (resposta) {
-//				createMessage(resposta.text, "bot", true);
-//			});
+			var resposta = JSON.parse(xhr.responseText);
+			console.log(resposta);
+			resposta[0].alternatives.forEach(function(t) {
+				createMessage(t.transcript, "me", true);
+			});
 		} else {
 			console.log(xhr.status);
 			console.log(xhr.responseText);

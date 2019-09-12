@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
 import com.ibm.cloud.sdk.core.http.HttpMediaType;
 import com.ibm.cloud.sdk.core.service.security.IamOptions;
 import com.ibm.watson.speech_to_text.v1.SpeechToText;
@@ -62,7 +63,8 @@ public class SpeechToTextServlet extends HttpServlet {
 				.build();
 		
 		SpeechRecognitionResults transcript = service.recognize(recOptions).execute().getResult();
-		System.out.println(transcript);
+		resp.setContentType("application/json");
+		resp.getWriter().println(new Gson().toJson(transcript.getResults()));
 		
 	}
 

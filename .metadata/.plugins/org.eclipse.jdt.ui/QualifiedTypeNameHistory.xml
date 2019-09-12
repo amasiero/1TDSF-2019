@@ -16,8 +16,6 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.andreymasiero.excecao.FiapException"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.service.security.IamOptions"/>
-<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.service.security.IamOptions.Builder"/>
 <fullyQualifiedTypeName name="com.ibm.watson.assistant.v1.model.MessageInput"/>
 <fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.http.HttpConfigOptions"/>
 <fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.http.HttpConfigOptions.Builder"/>
@@ -31,8 +29,6 @@
 <fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.Assistant"/>
 <fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.MessageInput"/>
 <fullyQualifiedTypeName name="com.ibm.watson.assistant.v2.model.MessageInput.Builder"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
-<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
 <fullyQualifiedTypeName name="com.andreymasiero.servlets.model.entities.Usuario"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
@@ -44,5 +40,20 @@
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.servlet.http.Part"/>
 <fullyQualifiedTypeName name="javax.servlet.annotation.MultipartConfig"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.service.security.IamOptions"/>
+<fullyQualifiedTypeName name="com.ibm.cloud.sdk.core.service.security.IamOptions.Builder"/>
+<fullyQualifiedTypeName name="com.ibm.watson.text_to_speech.v1.TextToSpeech"/>
+<fullyQualifiedTypeName name="com.ibm.watson.text_to_speech.v1.model.SynthesizeOptions"/>
+<fullyQualifiedTypeName name="com.ibm.watson.text_to_speech.v1.model.SynthesizeOptions.Builder"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.awt.event.TextEvent"/>
+<fullyQualifiedTypeName name="com.ibm.watson.text_to_speech.v1.util.WaveUtils"/>
+<fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+<fullyQualifiedTypeName name="com.ibm.watson.text_to_speech.v1.websocket.BaseSynthesizeCallback"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
 </qualifiedTypeNameHistroy>

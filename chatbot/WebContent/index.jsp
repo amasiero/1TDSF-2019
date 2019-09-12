@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,8 +26,8 @@
 		<ol id="recordingsList"></ol>
 	</div>
 	<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/sound.js"></script>
 	<script type="text/javascript" src="js/voice.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
